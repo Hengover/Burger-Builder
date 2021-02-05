@@ -1,6 +1,5 @@
-import { fetchOrders } from '../actions';
 import * as actionTypes from '../actions/actionTypes';
-import { updatedObject } from '../utility';
+import { updatedObject } from '../../shared/utility';
 
 const initialState = {
     orders: [],
