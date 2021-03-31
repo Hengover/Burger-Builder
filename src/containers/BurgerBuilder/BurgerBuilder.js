@@ -13,10 +13,17 @@ import axios from "../../axios-order";
 const burgerBuilder = (props) => {
   const [purchasing, setPurchasing] = useState(false);
 
+<<<<<<< HEAD
   const ings = useSelector((state) => state.burgerBuilder.ingredients);
   const price = useSelector((state) => state.burgerBuilder.totalPrice);
   const error = useSelector((state) => state.burgerBuilder.error);
   const isAuthenticated = useSelector((state) => state.auth.token !== null);
+=======
+export class BurgerBuilder extends Component {
+    state = {
+        purchasing: false
+    }
+>>>>>>> 21f1894eb79d9d488de124a59e4c851abe5b2c34
 
   const dispatch = useDispatch();
 
